@@ -1,12 +1,13 @@
-import { Text, StyleSheet, Platform } from "react-native";
+import { Text, StyleSheet, Platform, TextStyle, StyleProp } from "react-native";
 import React, { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+  style?: StyleProp<TextStyle>;
 }
 
-const AppText = ({ children }: Props) => {
-  return <Text style={styles.text}>{children}</Text>;
+const AppText = ({ children , style}: Props) => {
+  return <Text style={[styles.text , style]}>{children}</Text>;
 };
 
 const styles = StyleSheet.create({

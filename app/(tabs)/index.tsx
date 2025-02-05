@@ -6,19 +6,22 @@ import AppText from "@/components/AppText";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AppButton from "@/components/AppButton";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import Card from "@/components/cards/Card";
 
 const App = () => {
   return (
     <GestureHandlerRootView
-      // style={{
-      //   flex: 1,
-      //   backgroundColor: "white",
-      //   justifyContent: "center",
-      //   alignItems: "center",
-      // }}
+      style={{
+        flex: 1,
+        backgroundColor: "#f8f4f4",
+        padding: 20,
+      }}
     >
-      <WelcomeScreen />
-    
+      <Card
+        title="Red jacket for sale"
+        subTitle="$100"
+        image={require("@/assets/images/jacket.jpg")}
+      />
     </GestureHandlerRootView>
   );
 };
