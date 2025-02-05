@@ -7,6 +7,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AppButton from "@/components/AppButton";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Card from "@/components/cards/Card";
+import ListingDetailsScreen from "../screens/ListingDetailsScreen";
 
 const App = () => {
   return (
@@ -17,11 +18,12 @@ const App = () => {
         padding: 20,
       }}
     >
-      <Card
+      {/* <Card
         title="Red jacket for sale"
         subTitle="$100"
         image={require("@/assets/images/jacket.jpg")}
-      />
+      /> */}
+      <ListingDetailsScreen />
     </GestureHandlerRootView>
   );
 };
