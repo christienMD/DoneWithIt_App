@@ -23,7 +23,7 @@ const App = () => {
         subTitle="$100"
         image={require("@/assets/images/jacket.jpg")}
       /> */}
-      <ListingDetailsScreen />
+      <ListingDetailsScreen  />
     </GestureHandlerRootView>
   );
 };
