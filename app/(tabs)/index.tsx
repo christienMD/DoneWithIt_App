@@ -14,7 +14,7 @@ const App = () => {
     <GestureHandlerRootView
       style={{
         flex: 1,
-        backgroundColor: "#f8f4f4",
+        // backgroundColor: "#f8f4f4",
         padding: 20,
       }}
     >
@@ -23,7 +23,7 @@ const App = () => {
         subTitle="$100"
         image={require("@/assets/images/jacket.jpg")}
       /> */}
-      <ListingDetailsScreen  />
+      <ViewImageScreen  />
     </GestureHandlerRootView>
   );
 };
