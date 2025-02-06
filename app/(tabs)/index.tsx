@@ -10,6 +10,7 @@ import Card from "@/components/cards/Card";
 import ListingDetailsScreen from "../screens/ListingDetailsScreen";
 import AppTextInput from "@/components/AppTextInput";
 import AppPicker, { Item } from "@/components/AppPicker";
+import MessagesScreen from "../screens/MessagesScreen";
 
 const categories = [
   { label: "Furniture", value: 1 },
@@ -25,7 +26,6 @@ const App = () => {
       style={{
         flex: 1,
         backgroundColor: "#fff",
-        padding: 20,
       }}
     >
       {/* <Card
@@ -34,14 +34,7 @@ const App = () => {
         image={require("@/assets/images/jacket.jpg")}
       /> */}
       {/* <ViewImageScreen  /> */}
-      <AppPicker
-        items={categories}
-        placeholder="Category"
-        icon="apps"
-        selectedItem={category}
-        onSelectItem={(item) => setCategory(item)}
-      />
-      <AppTextInput placeholder="Email" icon="email" />
+      <MessagesScreen />
     </GestureHandlerRootView>
   );
 };
