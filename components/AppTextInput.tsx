@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.light,
     borderRadius: 25,
+    alignItems: "center",
     flexDirection: "row",
     width: "100%",
     padding: 15,
@@ -31,7 +32,6 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginRight: 10,
-    marginTop: 15
   },
   textInput: defaultStyles.text,
 });

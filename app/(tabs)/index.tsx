@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import ViewImageScreen from "../screens/ViewImageScreen";
 import AppText from "@/components/AppText";
@@ -9,8 +9,17 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Card from "@/components/cards/Card";
 import ListingDetailsScreen from "../screens/ListingDetailsScreen";
 import AppTextInput from "@/components/AppTextInput";
+import AppPicker, { Item } from "@/components/AppPicker";
+
+const categories = [
+  { label: "Furniture", value: 1 },
+  { label: "Clothing", value: 2 },
+  { label: "Cameras", value: 3 },
+];
 
 const App = () => {
+  const [category, setCategory] = useState<Item>(categories[0]);
+
   return (
     <GestureHandlerRootView
       style={{
@@ -25,7 +34,14 @@ const App = () => {
         image={require("@/assets/images/jacket.jpg")}
       /> */}
       {/* <ViewImageScreen  /> */}
-      <AppTextInput icon="email" placeholder="username" />
+      <AppPicker
+        items={categories}
+        placeholder="Category"
+        icon="apps"
+        selectedItem={category}
+        onSelectItem={(item) => setCategory(item)}
+      />
+      <AppTextInput placeholder="Email" icon="email" />
     </GestureHandlerRootView>
   );
 };
