@@ -8,13 +8,14 @@ import AppButton from "@/components/AppButton";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Card from "@/components/cards/Card";
 import ListingDetailsScreen from "../screens/ListingDetailsScreen";
+import AppTextInput from "@/components/AppTextInput";
 
 const App = () => {
   return (
     <GestureHandlerRootView
       style={{
         flex: 1,
-        // backgroundColor: "#f8f4f4",
+        backgroundColor: "#fff",
         padding: 20,
       }}
     >
@@ -23,7 +24,8 @@ const App = () => {
         subTitle="$100"
         image={require("@/assets/images/jacket.jpg")}
       /> */}
-      <ViewImageScreen  />
+      {/* <ViewImageScreen  /> */}
+      <AppTextInput icon="email" placeholder="username" />
     </GestureHandlerRootView>
   );
 };
