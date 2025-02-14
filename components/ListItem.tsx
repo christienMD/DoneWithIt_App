@@ -18,7 +18,7 @@ interface Props {
   subTitle?: string;
   image?: number;
   IconComponent?: ReactElement;
-  onPress: () => void;
+  onPress?: () => void;
   renderRightActions?: (
     progressAnimatedValue: Animated.AnimatedInterpolation<number>,
     dragAnimatedValue: Animated.AnimatedInterpolation<number>
@@ -54,7 +54,8 @@ export default ListItem;
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    padding: 30,
+    padding: 20,
+    backgroundColor: colors.white
   },
   detailsContainer: {
     marginLeft: 10,

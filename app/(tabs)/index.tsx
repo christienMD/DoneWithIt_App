@@ -14,6 +14,7 @@ import MessagesScreen from "../screens/MessagesScreen";
 import Screen from "@/components/Screen";
 import Icon from "@/components/Icon";
 import ListItem from "@/components/ListItem";
+import AcountScreen from "../screens/AcountScreen";
 
 const categories = [
   { label: "Furniture", value: 1 },
@@ -38,15 +39,7 @@ const App = () => {
       /> */}
       {/* <ViewImageScreen  /> */}
       {/* <MessagesScreen /> */}
-      <Screen>
-        <Icon name="email" size={50} />
-        <ListItem
-          title="title"
-          // subTitle="My Subtitle"
-          IconComponent={<Icon name="email" />}
-          onPress={() => {}}
-        />
-      </Screen>
+      <AcountScreen />
     </GestureHandlerRootView>
   );
 };
