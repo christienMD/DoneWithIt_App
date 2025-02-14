@@ -16,6 +16,7 @@ import Icon from "@/components/Icon";
 import ListItem from "@/components/ListItem";
 import AcountScreen from "../screens/AcountScreen";
 import ListingsScreen from "../screens/ListingsScreen";
+import LoginScreen from "../screens/LoginScreen";
 
 const categories = [
   { label: "Furniture", value: 1 },
@@ -33,15 +34,7 @@ const App = () => {
         backgroundColor: "#fff",
       }}
     >
-      {/* <Card
-        title="Red jacket for sale"
-        subTitle="$100"
-        image={require("@/assets/images/jacket.jpg")}
-      /> */}
-      {/* <ViewImageScreen  /> */}
-      {/* <MessagesScreen /> */}
-      {/* <AcountScreen /> */}
-      <ListingsScreen />
+      <LoginScreen />
     </GestureHandlerRootView>
   );
 };
