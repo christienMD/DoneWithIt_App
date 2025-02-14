@@ -11,6 +11,8 @@ import ListingDetailsScreen from "../screens/ListingDetailsScreen";
 import AppTextInput from "@/components/AppTextInput";
 import AppPicker, { Item } from "@/components/AppPicker";
 import MessagesScreen from "../screens/MessagesScreen";
+import Screen from "@/components/Screen";
+import Icon from "@/components/Icon";
 
 const categories = [
   { label: "Furniture", value: 1 },
@@ -34,7 +36,10 @@ const App = () => {
         image={require("@/assets/images/jacket.jpg")}
       /> */}
       {/* <ViewImageScreen  /> */}
-      <MessagesScreen />
+      {/* <MessagesScreen /> */}
+      <Screen>
+        <Icon name="email" size={50} />
+      </Screen>
     </GestureHandlerRootView>
   );
 };

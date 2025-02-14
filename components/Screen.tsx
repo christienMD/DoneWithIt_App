@@ -15,6 +15,7 @@ export default Screen;
 const styles = StyleSheet.create({
   screen: {
     paddingTop: Constants.statusBarHeight,
-    flex: 1
+    flex: 1,
+    // backgroundColor: 'orange'
   },
 });
