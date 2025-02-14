@@ -15,6 +15,7 @@ import Screen from "@/components/Screen";
 import Icon from "@/components/Icon";
 import ListItem from "@/components/ListItem";
 import AcountScreen from "../screens/AcountScreen";
+import ListingsScreen from "../screens/ListingsScreen";
 
 const categories = [
   { label: "Furniture", value: 1 },
@@ -39,7 +40,8 @@ const App = () => {
       /> */}
       {/* <ViewImageScreen  /> */}
       {/* <MessagesScreen /> */}
-      <AcountScreen />
+      {/* <AcountScreen /> */}
+      <ListingsScreen />
     </GestureHandlerRootView>
   );
 };
