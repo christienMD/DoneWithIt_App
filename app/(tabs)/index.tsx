@@ -13,6 +13,7 @@ import AppPicker, { Item } from "@/components/AppPicker";
 import MessagesScreen from "../screens/MessagesScreen";
 import Screen from "@/components/Screen";
 import Icon from "@/components/Icon";
+import ListItem from "@/components/ListItem";
 
 const categories = [
   { label: "Furniture", value: 1 },
@@ -39,6 +40,12 @@ const App = () => {
       {/* <MessagesScreen /> */}
       <Screen>
         <Icon name="email" size={50} />
+        <ListItem
+          title="title"
+          // subTitle="My Subtitle"
+          IconComponent={<Icon name="email" />}
+          onPress={() => {}}
+        />
       </Screen>
     </GestureHandlerRootView>
   );
